@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="2409106078_RichardJulianMakaba_POSTTEST3"/>
+        <attribute name="authors" value="richa_icpkzn1"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-24 10.41.16 AM"/>
+        <attribute name="created" value="cmljaGFfaWNwa3puMTtNU0k7MjAyNC0wOS0yNDswOC4yNy41MCBBTTsyODAx"/>
+        <attribute name="edited" value="cmljaGFfaWNwa3puMTtNU0k7MjAyNC0wOS0yNDsxMC40MS4xNiBBTTsyOzI5MDE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="beratmg, beratkg" type="Integer" array="False" size=""/>
+            <declare name="tinggikm, tinggim, bmi" type="Real" array="False" size=""/>
+            <output expression="&quot;Haloo, Selamat datang di kalkulator BMI, Silahkan isi berat badan anda dalam satuan (mg) dan tinggi badan anda dalam satuan (km) Contoh:Berat badan anda 50 kg = 50000000 mg, Tinggi badan anda 165 cm = 0.00165 km&quot;" newline="True"/>
+            <output expression="&quot;Masukkan berat badan anda (mg)&quot;" newline="True"/>
+            <input variable="beratmg"/>
+            <output expression="&quot;Masukkan tinggi badan anda (km)&quot;" newline="True"/>
+            <input variable="tinggikm"/>
+            <assign variable="beratkg" expression="beratmg / 1000000"/>
+            <assign variable="tinggim" expression="tinggikm * 1000"/>
+            <assign variable="bmi" expression="beratkg / (tinggim ^ 2)"/>
+            <if expression="bmi &lt; 18.5">
+                <then>
+                    <output expression="&quot;Berat badan anda kurang (Underweight)&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="bmi &lt; 24.9">
+                        <then>
+                            <output expression="&quot;Berat badan anda normal (Normal)&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="bmi &lt; 29.9">
+                                <then>
+                                    <output expression="&quot;Berat badan anda berlebih (Overweight)&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Obesitas&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;BMI anda adalah &quot; &amp; bmi" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
