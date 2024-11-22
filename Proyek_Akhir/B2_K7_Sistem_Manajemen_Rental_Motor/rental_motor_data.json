@@ -1,0 +1,97 @@
+{
+    "motor": [
+        {
+            "jenis motor": "Mio J",
+            "jumlah motor": 3,
+            "harga sewa motor": 120000
+        },
+        {
+            "jenis motor": "Beat",
+            "jumlah motor": 3,
+            "harga sewa motor": 75000
+        },
+        {
+            "jenis motor": "ZX25R",
+            "jumlah motor": 2,
+            "harga sewa motor": 150000
+        },
+        {
+            "jenis motor": "Bebek",
+            "jumlah motor": 3,
+            "harga sewa motor": 100000
+        },
+        {
+            "jenis motor": "Jupiter mx 1",
+            "jumlah motor": 2,
+            "harga sewa motor": 12000
+        }
+    ],
+    "pengunjung": [
+        {
+            "nama": "Rahel",
+            "password": "123",
+            "role": "member",
+            "motor_sewa": null,
+            "harga_motor_sewa": null,
+            "jumlah_motor_sewa": null,
+            "durasi_sewa": null,
+            "total_harga_sewa": null,
+            "status_sewa": null
+        },
+        {
+            "nama": "Rahel",
+            "password": "123",
+            "role": "member",
+            "motor_sewa": "Bebek",
+            "harga_motor_sewa": 100000,
+            "jumlah_motor_sewa": 1,
+            "durasi_sewa": 1,
+            "total_harga_sewa": 100000,
+            "status_sewa": "dikembalikan"
+        },
+        {
+            "nama": "Rahel",
+            "password": "123",
+            "role": "member",
+            "motor_sewa": "Beat",
+            "harga_motor_sewa": 75000,
+            "jumlah_motor_sewa": 1,
+            "durasi_sewa": 1,
+            "total_harga_sewa": 75000,
+            "status_sewa": "dikembalikan"
+        },
+        {
+            "nama": "Radit",
+            "password": "1",
+            "role": "user",
+            "motor_sewa": null,
+            "harga_motor_sewa": null,
+            "jumlah_motor_sewa": null,
+            "durasi_sewa": null,
+            "total_harga_sewa": null,
+            "status_sewa": null
+        },
+        {
+            "nama": "Radit",
+            "password": "1",
+            "role": "user",
+            "motor_sewa": "Mio j",
+            "harga_motor_sewa": 120000,
+            "jumlah_motor_sewa": 1,
+            "durasi_sewa": 1,
+            "total_harga_sewa": 120000,
+            "status_sewa": "dikembalikan"
+        },
+        {
+            "nama": "Radit",
+            "password": "1",
+            "role": "user",
+            "motor_sewa": "Bebek",
+            "harga_motor_sewa": 100000,
+            "jumlah_motor_sewa": 1,
+            "durasi_sewa": 1,
+            "total_harga_sewa": 100000,
+            "status_sewa": "dikembalikan"
+        }
+    ]
+}
